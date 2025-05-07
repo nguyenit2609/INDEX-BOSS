@@ -1,0 +1,170 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to bottom, #8B0000 0%, red 50%, white 100%);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+#section1{
+    min-height: 100vh;
+}
+.star {
+    width: 100px;
+    height: 100px;
+    background-color: #FFD700;
+    clip-path: polygon(
+        50% 0%,   
+        61% 35%,  
+        98% 35%,  
+        68% 57%,  
+        79% 91%, 
+        50% 70%,  
+        21% 91%,  
+        32% 57%, 
+        2% 35%,  
+        39% 35%   
+    );
+    transform: scale(1);
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    bottom:30px;
+}
+
+h1 {
+    color: #FFD700;
+    transform: scale(1);
+    font-size: 50px;
+}
+.content {
+    border: 1px solid #F5F5DC;
+    background-color: #F5F5DC;
+    border-radius: 10px;
+    padding: 10px;
+    width: 90%;
+    position: relative;
+    top: 100px;
+    left: 50%;
+    right: 50%;
+    transform: translatey(-50%);
+    transform: translateX(-50%);
+    height: 250px;
+}
+.circle-img{
+    border: 5px solid rgba(255, 255, 255, 0.5) ;
+    border-radius:100%;
+    object-fit: cover; 
+    width: 100px;
+    height: 100px;
+    position: relative; 
+    bottom: 60px;
+    left: -10px;
+}
+.content h2 {
+    position: relative;
+    bottom: 70px;
+
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    position: relative;
+    bottom: 50px;
+}
+.menu i {
+    font-size: 30px;
+}
+.down {
+    position: relative;
+    max-width: 100%;
+    display: none;
+    cursor: pointer;
+}
+.down:active{
+    background-color: silver;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+
+}
+#section2 {
+    margin-top: 10px;
+    min-height: 100vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFF0F5;
+}
+.container {
+    border: 1px solid white;
+    border-radius: 24px;
+    width: 90%;
+    height: auto;
+    background-color: white;
+    box-shadow: 10px 10px 10px silver;
+    display: grid;
+    place-items: center; /* căn giữa nội dung trong grid */
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 20px;
+}
+.container button{
+    width: 250px;
+    padding: 20px;
+    border: 1px solid #FFC0CB	;
+    border-radius: 24px;
+    background-color: #FFC0CB	;
+    color: white	;
+    text-shadow: 0 0 10px #ffc0cb,   /* hồng */
+     0 0 20px #dda0dd,   /* tím nhạt (plum) */
+     0 0 30px #ba55d3;   /* tím orchid đậm */
+     font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    cursor: pointer;
+}
+/* Hiệu ứng rơi hoa anh đào */
+#sakura-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.sakura {
+    position: absolute;
+    background-image: url("favicon-removebg-preview.png"); /* Hình ảnh cánh hoa */
+    background-size: contain; /* full ảnh */
+    background-repeat: no-repeat; /* Chỉ hiện 1 ảnh ko bị xen kẽ */
+    opacity: 1;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    0% {
+    transform: translateY(-5vh) rotate(0deg);
+    opacity: 1;
+    }
+    100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+    }
+}
+input{
+    border: 0px solid #F5F5DC;
+    background-color: #F5F5DC;
+    position: relative;
+    bottom: 90px;
+    text-align: center;
+    width: 100%;
+}
