@@ -63,7 +63,6 @@ h1 {
     height: 100px;
     position: relative; 
     bottom: 60px;
-    left: -10px;
 }
 .content h2 {
     position: relative;
@@ -143,7 +142,7 @@ a {
 
 .sakura {
     position: absolute;
-    background-image: url("favicon-removebg-preview.png"); /* Hình ảnh cánh hoa */
+    background-image: url("./image/favicon-removebg-preview.png"); /* Hình ảnh cánh hoa */
     background-size: contain; /* full ảnh */
     background-repeat: no-repeat; /* Chỉ hiện 1 ảnh ko bị xen kẽ */
     opacity: 1;
